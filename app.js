@@ -1,7 +1,8 @@
 var express = require("express");
 var path = require("path");
 var routes = require("./routes")
-var demoService = require("./services")
+var demoService = require("./services");
+var attendance_service = require("./attendanceService")
 var bodyParser = require('body-parser');
 var app = express();
 
@@ -18,6 +19,7 @@ app.use(express.static('node_modules'));
 
 app.use('/', routes); // all the routes for static htmls are defined
 app.use('/demo', demoService); // all the rest services are defined
+app.use('/attendance', attendance_service); 
 
 
 app.use(function(req,resp,next){
