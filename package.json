@@ -21,7 +21,7 @@
     "bootstrap": "^3.3.7",
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "oracledb": "^3.0.1",
     "promise": "^8.0.3"
   }
